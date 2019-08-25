@@ -13,25 +13,27 @@ function caclRemaindar(first, second) {
     return big % small;
 };
 
-// function caclSum(array) {
-//     let result = 0;
+function caclSum(array) {
+    let result = 0;
 
-//     array.forEach(element => {
-//         result += element;
-//     });
+    array.forEach(element => {
+        result += element;
+    });
 
-//     return result;
-// };
+    return result;
+};
 
-// function caclSumInConditon(array, arrayLength) {
-//     let result = 0;
-//     array.forEach(element => {
-//         if (element < arrayLength) {
-//             result += item;
-//         }
-//     });
-//     return result;
-// };
+function caclSumInConditon(array, num) {
+    let result = 0;
+
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+        if (element < num) {
+            result += element;
+        }
+    }
+    return result;
+};
 
 module.exports = {
     caclRemaindar,
